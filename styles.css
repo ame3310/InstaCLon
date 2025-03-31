@@ -1,0 +1,292 @@
+
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI';
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #fafafa;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1300px;
+            overflow: hidden;
+        }
+        .menu-header{
+            Width: 102.4px;
+            Height: 28.99px;
+            object-fit: cover;
+            margin-left: 5px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 20%;
+            gap: 15px;
+           /* padding: 20px;*/
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar ul li {
+            
+            margin: 10px 0;
+           /* padding: 15px;
+            text-align: center;*/
+           
+        }
+
+        .menu-items{
+            display: inline;
+            align-items: left;
+            /*gap: 12px;*/
+            padding: 20px;
+            font-size: 16px;
+
+        }
+        .menu-profile {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            vertical-align: middle; 
+            
+        }
+        .material-icons{
+            vertical-align: middle; 
+            margin-right: 5px;
+            height: 24px;
+            width: 24px;
+            
+        }
+
+        /* Main Content */
+        .main-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Stories */
+        .stories {
+            display: flex;
+            justify-content: left;
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            
+        }
+
+        .story {
+            text-align: center;
+            margin-right: 20px;
+            padding-right: 3px;
+            padding-left: 3px;
+
+        }
+
+        .story-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid #e1306c;
+            
+        }
+        .story-img:hover{
+            scale: 1.1;
+        }
+
+        .story-username {
+            font-size: 12px;
+            color: #333;
+            margin-top: 5px;
+        }
+        .suggestions{
+            display: block;
+            margin-left: 20px; 
+            list-style-type: none;
+            margin-bottom: 20px;
+            
+
+        }
+        .suggestions-img{
+            display: flex;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;  
+            margin-top: 10px; 
+            margin-right: 40px;
+            vertical-align: middle;  
+                
+        }
+        .suggestions-img:hover{
+            scale: 1.1;
+        }
+        .suggestions-texts{
+            display: flex;
+        }
+        .text-right{
+            margin-left: 120px;
+        }
+
+        /* Posts */
+        .posts {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .post {
+            background: #fff;
+            border: 1px solid #ddd;
+            
+            
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .post-user-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .profile-big{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-right: 10px;
+
+        }
+
+        .post-username {
+            font-weight: bold;
+            flex-grow: 1;
+        }
+
+        .post-options {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .post-img {
+            width: 100%;
+            border-radius: 0;
+            border: 1px solid #ddd;
+        }
+
+        .post-footer {
+            padding: 10px;
+            display: inline;
+            
+        }
+
+        .post-footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .icons-footer{
+            margin-left: 10px;
+            margin-bottom: 15px;
+            
+        }
+        .footer-text{
+            margin-left: 10px;
+        }
+        #icon-right{
+            margin-left: 450px;
+        }
+        .grey-text{
+           color: grey;
+        }
+        .blue-text{
+            color: blue;
+        }
+        #switch-text{
+            margin-top: 30px;
+            margin-left: 90px;
+        }
+        #follow-text1{
+            margin-top: 30px;
+            margin-left: 82px;
+        }
+        #follow-text2{
+            margin-top: 30px;
+            margin-left: 78px;
+        }
+        #follow-text3{
+            margin-top: 30px;
+            margin-left: 88px;
+        }
+
+        #small-font{
+            font-size: 6px;
+        }
+        .add-comment{
+            display: flex;
+            border:  1px solid #ddd;
+            padding: 10px;
+            vertical-align: middle;           
+        }
+        #emoji{
+            margin-right: 15px;
+        }
+        .post-text{
+            font-size: 4px;
+            color:lightskyblue;
+        }
+        .content{
+            display:flex
+        }
+        .follows{
+            z-index: 1;
+            padding: 10px;
+            border: 1px;
+        }  
+        .switch{
+            display: flex;
+            vertical-align: middle;  
+            margin-left: 20px; 
+         }
+         .names{
+            margin-left: 20px;
+         }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sidebar {
+                width: 100%;
+                text-align: center;
+                border: 1px solid #ddd;;
+            }
+            .main-cont {
+                width: 100%;
+            }
+            .stories {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .icons-left{
+                display: flex;
+
+            }         
+            .icon{
+                width: 32px;
+                height: 40px;
+            }
+        }
+   
